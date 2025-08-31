@@ -1,7 +1,7 @@
 from django.db import models
 from plantes.models.aptitude import AptitudePointFort, AptitudePointFaible
 from plantes_configuration.models import *
-from planiculture.common.choices import MOIS
+from le_planiculteur.common.choices import MOIS
 
 # Create your models here.
 class ModelePlante(models.Model):

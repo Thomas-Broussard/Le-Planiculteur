@@ -2,19 +2,32 @@
 import os
 import sys
 import glob
+import datetime
 
 # Configure Django environment
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "planiculture.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "le_planiculteur.settings")
 
 import django
 django.setup()
 
 from django.core.management import call_command
 
+def backup_database():
+    """
+    Sauvegarde toutes les données existantes dans un fichier JSON horodaté.
+    """
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_file = f"backups/backup_{timestamp}.json"
+    print(f"💾 Sauvegarde de la base dans {backup_file} ...")
+    call_command("dumpdata", "--natural-foreign", "--natural-primary", "--exclude", "contenttypes", "--exclude", "auth.permission", output=backup_file)
+    return backup_file
+
 def reset_database():
     """
     Réinitialise la base de données et charge toutes les fixtures.
     """
+    backup_file = backup_database()
+
     print("🔹 Suppression de la base de données (flush)...")
     call_command("flush", "--noinput")
 
@@ -71,6 +84,7 @@ def reset_database():
         call_command("loaddata", fixture)
 
     print("✅ Base de données réinitialisée et fixtures chargées !")
+    print(f"💾 Les anciennes données ont été sauvegardées dans : {backup_file}")
 
 
 if __name__ == "__main__":
