@@ -1,0 +1,34 @@
+[
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 1,
+        "fields": {
+            "nom": "Légume",
+            "description": "Plantes comestibles cultivées au potager"
+        }
+    },
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 2,
+        "fields": {
+            "nom": "Fruit",
+            "description": "Plantes produisant des fruits"
+        }
+    },
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 3,
+        "fields": {
+            "nom": "Plante aromatique",
+            "description": "Plantes à parfum et condiments"
+        }
+    },
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 4,
+        "fields": {
+            "nom": "Plante médicinale",
+            "description": "Plantes à usage thérapeutique"
+        }
+    }
+]

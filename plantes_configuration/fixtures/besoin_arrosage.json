@@ -1,0 +1,26 @@
+[
+    {
+        "model": "plantes_configuration.besoinarrosage",
+        "pk": 1,
+        "fields": {
+            "nom": "Faible",
+            "description": "Arrosage peu fréquent"
+        }
+    },
+    {
+        "model": "plantes_configuration.besoinarrosage",
+        "pk": 2,
+        "fields": {
+            "nom": "Moyen",
+            "description": "Arrosage régulier"
+        }
+    },
+    {
+        "model": "plantes_configuration.besoinarrosage",
+        "pk": 3,
+        "fields": {
+            "nom": "Élevé",
+            "description": "Arrosage fréquent et abondant"
+        }
+    }
+]

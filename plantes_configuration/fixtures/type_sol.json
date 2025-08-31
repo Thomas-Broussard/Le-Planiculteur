@@ -1,0 +1,42 @@
+[
+    {
+        "model": "plantes_configuration.typesol",
+        "pk": 1,
+        "fields": {
+            "nom": "Sableux",
+            "description": "Sol léger et drainant"
+        }
+    },
+    {
+        "model": "plantes_configuration.typesol",
+        "pk": 2,
+        "fields": {
+            "nom": "Argileux",
+            "description": "Sol lourd, retient l'eau"
+        }
+    },
+    {
+        "model": "plantes_configuration.typesol",
+        "pk": 3,
+        "fields": {
+            "nom": "Humifère",
+            "description": "Riche en matière organique"
+        }
+    },
+    {
+        "model": "plantes_configuration.typesol",
+        "pk": 4,
+        "fields": {
+            "nom": "Limoneux",
+            "description": "Sol fin et fertile"
+        }
+    },
+    {
+        "model": "plantes_configuration.typesol",
+        "pk": 5,
+        "fields": {
+            "nom": "Tourbeux",
+            "description": "Sol acide et humide"
+        }
+    }
+]

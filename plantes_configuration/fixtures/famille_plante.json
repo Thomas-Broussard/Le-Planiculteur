@@ -1,0 +1,34 @@
+[
+    {
+        "model": "plantes_configuration.familleplante",
+        "pk": 1,
+        "fields": {
+            "nom": "Solanacées",
+            "description": "Tomate, Poivron, Aubergine"
+        }
+    },
+    {
+        "model": "plantes_configuration.familleplante",
+        "pk": 2,
+        "fields": {
+            "nom": "Légumineuses",
+            "description": "Pois, Haricot"
+        }
+    },
+    {
+        "model": "plantes_configuration.familleplante",
+        "pk": 3,
+        "fields": {
+            "nom": "Cucurbitacées",
+            "description": "Courgette, Concombre, Citrouille"
+        }
+    },
+    {
+        "model": "plantes_configuration.familleplante",
+        "pk": 4,
+        "fields": {
+            "nom": "Brassicacées",
+            "description": "Chou, Brocoli, Radis"
+        }
+    }
+]

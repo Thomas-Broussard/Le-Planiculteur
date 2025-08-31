@@ -1,0 +1,26 @@
+[
+    {
+        "model": "plantes_configuration.besoinsoleil",
+        "pk": 1,
+        "fields": {
+            "nom": "Plein soleil",
+            "description": "Besoin d'au moins 6h de soleil par jour"
+        }
+    },
+    {
+        "model": "plantes_configuration.besoinsoleil",
+        "pk": 2,
+        "fields": {
+            "nom": "Mi-ombre",
+            "description": "3 à 6h de soleil par jour"
+        }
+    },
+    {
+        "model": "plantes_configuration.besoinsoleil",
+        "pk": 3,
+        "fields": {
+            "nom": "Ombre",
+            "description": "Peu ou pas de soleil direct"
+        }
+    }
+]
