@@ -1,6 +1,6 @@
-# 🌱 Planiculture
+# 🌱 Le Planiculteur
 
-Planiculture est un outil que je développe pour permettre : 
+Le Planiculteur est un outil que je développe pour permettre : 
 - De recenser les plantes utiles au potager et les caractériser
 - D'aider à concevoir son propre potager en associant correctement les plantes entre elles
 - D'aider à plannifier les semis, les récoltes et les rotations des plantes
