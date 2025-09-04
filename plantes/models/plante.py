@@ -16,8 +16,8 @@ class ModelePlante(models.Model):
     description = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='plantes/', blank=True, null=True)
 
-    categorie = models.ForeignKey(CategoriePlante, on_delete=models.SET_NULL, null=True)
-    famille = models.ForeignKey(FamillePlante, on_delete=models.SET_NULL, null=True)
+    categorie = models.ForeignKey(CategoriePlante, on_delete=models.SET_NULL, blank=True,null=True)
+    famille = models.ForeignKey(FamillePlante, on_delete=models.SET_NULL, blank=True,null=True)
 
     # Besoins de la plante
     type_sol = models.ForeignKey(TypeSol, on_delete=models.SET_NULL, null=True)
@@ -36,8 +36,8 @@ class ModelePlante(models.Model):
     espacement_lignes = models.FloatField(help_text="Distance entre deux lignes (cm)", blank=True, null=True)
 
     # Points forts / faibles
-    points_forts = models.ManyToManyField(AptitudePointFort)
-    points_faibles = models.ManyToManyField(AptitudePointFaible)
+    points_forts = models.ManyToManyField(AptitudePointFort, blank=True)
+    points_faibles = models.ManyToManyField(AptitudePointFaible, blank=True)
 
 
     # -----------------------------------

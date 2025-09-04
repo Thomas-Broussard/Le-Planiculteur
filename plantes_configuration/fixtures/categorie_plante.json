@@ -3,13 +3,37 @@
         "model": "plantes_configuration.categorieplante",
         "pk": 1,
         "fields": {
-            "nom": "Légume",
-            "description": "Plantes comestibles cultivées au potager"
+            "nom": "Légume-Fruit",
+            "description": "Aubergine, Tomate, Concombre, Piment, ..."
         }
     },
     {
         "model": "plantes_configuration.categorieplante",
         "pk": 2,
+        "fields": {
+            "nom": "Légumineuse",
+            "description": "Gourgane, Pois, Soya, Haricot, ..."
+        }
+    },
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 3,
+        "fields": {
+            "nom": "Légume-Feuille",
+            "description": "Chou-kale, Epinard, Laiture, Roquette, ..."
+        }
+    },
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 4,
+        "fields": {
+            "nom": "Légume-Racine",
+            "description": "Carotte, Radis, Oignon vert, Navet, ..."
+        }
+    },
+    {
+        "model": "plantes_configuration.categorieplante",
+        "pk": 5,
         "fields": {
             "nom": "Fruit",
             "description": "Plantes produisant des fruits"
@@ -17,7 +41,7 @@
     },
     {
         "model": "plantes_configuration.categorieplante",
-        "pk": 3,
+        "pk": 6,
         "fields": {
             "nom": "Plante aromatique",
             "description": "Plantes à parfum et condiments"
@@ -25,7 +49,7 @@
     },
     {
         "model": "plantes_configuration.categorieplante",
-        "pk": 4,
+        "pk": 7,
         "fields": {
             "nom": "Plante médicinale",
             "description": "Plantes à usage thérapeutique"
