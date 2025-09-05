@@ -3,6 +3,8 @@ from plantes.models import *
 
 @admin.register(ModelePlante)
 class PlanteAdmin(admin.ModelAdmin):
+    filter_horizontal = ('points_forts', 'points_faibles')
+
     fieldsets = (
         ("Identité de la plante", {
             'fields': (
@@ -55,6 +57,7 @@ class PlanteAdmin(admin.ModelAdmin):
     )
     search_fields = (
         'nom_commun',
-        'nom_latin',
     )
     list_per_page = 10
+
+    
