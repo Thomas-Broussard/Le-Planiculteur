@@ -3,7 +3,6 @@ from plantes.models.aptitude import AptitudePointFort, AptitudePointFaible
 from plantes_configuration.models import *
 from le_planiculteur.common.choices import MOIS
 
-# Create your models here.
 class ModelePlante(models.Model):
     class Meta:
         verbose_name = "plante"
